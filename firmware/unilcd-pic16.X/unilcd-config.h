@@ -1,7 +1,7 @@
 /**
  * @file unilcd-config.h
  * @author Dilshan R Jayakody (jayakody2000lk@gmail.com)
- * @brief MPLAB XC C (PIC) configuration file for YALI module.
+ * @brief PIC16F877A configuration file for YALI demo.
  * @version 1.0
  * @date 2023-03-23
  * 
