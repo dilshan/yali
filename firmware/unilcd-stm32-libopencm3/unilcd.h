@@ -39,6 +39,7 @@
 #elif STM32_LIBOPENCM3
 // STM32 with LibOpenCM3.
 #include "stm32-libopencm3-conf.h"
+#include "stm32_delay.h"
 #else
 #error "Unsupported board or microcontroller."
 #endif

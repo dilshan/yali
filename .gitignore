@@ -10,6 +10,8 @@
 *.obj.dmp
 *.mk
 *.map
+*.a
+*.ld
 
 # MPLAB
 

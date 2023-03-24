@@ -96,6 +96,37 @@ VOID writeLCDInterface(UCHAR *data)
   DELAY_SHORT();
   SHIFTREG_PORT = SHIFTREG_PORT & (~(1 << SHIFTREG_LATCH_PIN));
   
+#elif STM32_LIBOPENCM3
+
+  gpio_clear(SHIFTREG_PORT, SHIFTREG_LATCH_PIN);
+
+  // Load data into the shift register.
+  for(pos = 7; pos != 0xFF; pos--)
+  {
+    gpio_clear(SHIFTREG_PORT, SHIFTREG_CLK_PIN);
+
+    if(((*data) & (1 << pos)) != 0x00)
+    {
+      gpio_set(SHIFTREG_PORT, SHIFTREG_DATA_PIN); 
+    }
+    else
+    {
+      gpio_clear(SHIFTREG_PORT, SHIFTREG_DATA_PIN); 
+    }
+
+    DELAY_SHORT();
+    gpio_set(SHIFTREG_PORT, SHIFTREG_CLK_PIN);
+    DELAY_SHORT();    
+  }
+
+  gpio_clear(SHIFTREG_PORT, SHIFTREG_CLK_PIN);
+
+  // Latch output and feed data to LCD.
+  DELAY_SHORT();  
+  gpio_set(SHIFTREG_PORT, SHIFTREG_LATCH_PIN); 
+  DELAY_SHORT();  
+  gpio_clear(SHIFTREG_PORT, SHIFTREG_LATCH_PIN);  
+
 #endif  
 }
 
@@ -129,7 +160,21 @@ VOID initLCDInterface(VOID)
   
   // Set all output pins to known state.
   SHIFTREG_PORT = SHIFTREG_PORT & (~((1 << SHIFTREG_CLK_PIN) | (1 << SHIFTREG_DATA_PIN) | (1 << SHIFTREG_LATCH_PIN)));
+
+#elif STM32_LIBOPENCM3
+
+  // Enable clocking for output port.
+  rcc_periph_clock_enable(SHIFTREG_AHB);
+
+  // Initialize SysTick with 1ms interval.
+  setupSysTick();
   
+  // Configure CLK, DATA and LATCH pins to output mode.
+  gpio_set_mode(SHIFTREG_PORT, GPIO_MODE_OUTPUT_2_MHZ, GPIO_CNF_OUTPUT_PUSHPULL, SHIFTREG_CLK_PIN | SHIFTREG_DATA_PIN | SHIFTREG_LATCH_PIN);
+
+  // Set all output pins to known state.
+  gpio_clear(SHIFTREG_PORT, SHIFTREG_CLK_PIN | SHIFTREG_DATA_PIN | SHIFTREG_LATCH_PIN);
+
 #endif  
 
   lcdCmdBuffer = 0x00;
