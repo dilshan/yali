@@ -1,8 +1,7 @@
-# MPLAB
+# Common
 
 *.d
 *.pre
-*.p1
 *.lst
 *.sym
 *.obj
@@ -11,6 +10,10 @@
 *.obj.dmp
 *.mk
 *.map
+
+# MPLAB
+
+*.p1
 *.properties
 *.production
 *.debug
@@ -28,3 +31,21 @@ firmware/unilcd-pic16.X/funclist
 firmware/unilcd-pic16.X/nbproject/Makefile-*
 firmware/unilcd-pic16.X/disassembly/
 firmware/unilcd-pic16.X/.generated_files/
+
+# KiCAD
+
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+*.net
