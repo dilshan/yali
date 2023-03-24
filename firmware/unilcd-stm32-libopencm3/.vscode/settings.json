@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "unilcd.h": "c",
-        "stm32-libopencm3-conf.h": "c",
-        "systick.h": "c",
-        "stm32_delay.h": "c",
-        "rcc.h": "c"
-    }
-}
