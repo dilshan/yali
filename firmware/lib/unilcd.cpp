@@ -127,6 +127,28 @@ VOID writeLCDInterface(UCHAR *data)
   DELAY_SHORT();  
   gpio_clear(SHIFTREG_PORT, SHIFTREG_LATCH_PIN);  
 
+#elif ESP8266_FREERTOS
+
+  gpio_set_level(SHIFTREG_LATCH_PIN, 0);
+
+  // Load data into the shift register.
+  for(pos = 7; pos != 0xFF; pos--)
+  {
+    gpio_set_level(SHIFTREG_CLK_PIN, 0);
+    gpio_set_level(SHIFTREG_DATA_PIN, (*data) & (1 << pos)); 
+    DELAY_SHORT();
+    gpio_set_level(SHIFTREG_CLK_PIN, 1);
+    DELAY_SHORT();    
+  }
+
+  gpio_set_level(SHIFTREG_CLK_PIN, 0);
+   
+  // Latch output and feed data to LCD.
+  DELAY_SHORT();  
+  gpio_set_level(SHIFTREG_LATCH_PIN, 1); 
+  DELAY_SHORT();  
+  gpio_set_level(SHIFTREG_LATCH_PIN, 0);
+
 #endif  
 }
 
@@ -174,6 +196,22 @@ VOID initLCDInterface(VOID)
 
   // Set all output pins to known state.
   gpio_clear(SHIFTREG_PORT, SHIFTREG_CLK_PIN | SHIFTREG_DATA_PIN | SHIFTREG_LATCH_PIN);
+
+#elif ESP8266_FREERTOS
+
+  // Configure CLK, DATA and LATCH pins to output mode.
+  gpio_config_t shiftRegPort;  
+  shiftRegPort.mode = GPIO_MODE_OUTPUT;
+  shiftRegPort.intr_type = GPIO_INTR_DISABLE;
+  shiftRegPort.pull_down_en = 0;
+  shiftRegPort.pull_up_en = 0;
+  shiftRegPort.pin_bit_mask = ((1ULL << SHIFTREG_CLK_PIN) | (1ULL << SHIFTREG_DATA_PIN) | (1ULL << SHIFTREG_LATCH_PIN));
+  gpio_config(&shiftRegPort);
+
+  // Set all output pins to known state.
+  gpio_set_level(SHIFTREG_CLK_PIN, 0);
+  gpio_set_level(SHIFTREG_DATA_PIN, 0);
+  gpio_set_level(SHIFTREG_LATCH_PIN, 0);
 
 #endif  
 

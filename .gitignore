@@ -51,3 +51,7 @@ _autosave-*
 *-save.kicad_pcb
 fp-info-cache
 *.net
+
+# ESP8266 RTOS SDK
+
+firmware/unilcd-esp8266/build/

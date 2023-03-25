@@ -40,6 +40,11 @@
 // STM32 with LibOpenCM3.
 #include "stm32-libopencm3-conf.h"
 #include "stm32_delay.h"
+#elif ESP8266_FREERTOS
+// ESP8266 FreeRTOS SDK.
+#include <unistd.h>
+#include "driver/gpio.h"
+#include "esp8266-conf.h"
 #else
 #error "Unsupported board or microcontroller."
 #endif
