@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clearlcd_51',['clearLCD',['../unilcd_8h.html#ab106edfddce9301dc002f52d3ce79a0d',1,'unilcd.h']]]
+  ['arduino_5favr_81',['ARDUINO_AVR',['../arduino-conf_8h.html#a344eac106fa54c99529a8a1b3632b5d7',1,'arduino-conf.h']]]
 ];

@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['sendlcdcommand_28',['sendLCDCommand',['../unilcd_8h.html#a7f6a1824a0791ada4935e8dc692f76eb',1,'unilcd.h']]],
-  ['sendlcddata_29',['sendLCDData',['../unilcd_8h.html#a931eb0bef81d2f7a2fee4446bdec3e50',1,'unilcd.h']]],
-  ['sendlcdinstruction_30',['sendLCDInstruction',['../unilcd_8cpp.html#ad53245dcdd4cf10125a06d4754003830',1,'sendLCDInstruction(UCHAR data, UCHAR mode):&#160;unilcd.cpp'],['../unilcd_8h.html#ad53245dcdd4cf10125a06d4754003830',1,'sendLCDInstruction(UCHAR data, UCHAR mode):&#160;unilcd.cpp']]],
-  ['setbacklightstate_31',['setBacklightState',['../unilcd_8cpp.html#a9293c16acea0e6143d60655e7274591a',1,'setBacklightState(UCHAR backLightState):&#160;unilcd.cpp'],['../unilcd_8h.html#a9293c16acea0e6143d60655e7274591a',1,'setBacklightState(UCHAR backLightState):&#160;unilcd.cpp']]],
-  ['setcursorblinkstate_32',['setCursorBlinkState',['../unilcd_8cpp.html#ae8cc5c7ba044ffe0adde1b42e13627c7',1,'setCursorBlinkState(UCHAR blinkState):&#160;unilcd.cpp'],['../unilcd_8h.html#ae8cc5c7ba044ffe0adde1b42e13627c7',1,'setCursorBlinkState(UCHAR blinkState):&#160;unilcd.cpp']]],
-  ['setcursorstate_33',['setCursorState',['../unilcd_8cpp.html#aef1b2798e0bf3407fc41e25dd0376901',1,'setCursorState(UCHAR cursorState):&#160;unilcd.cpp'],['../unilcd_8h.html#aef1b2798e0bf3407fc41e25dd0376901',1,'setCursorState(UCHAR cursorState):&#160;unilcd.cpp']]],
-  ['setcustomchar_34',['setCustomChar',['../unilcd_8cpp.html#a5941dec2e511fb8b848adfa954bf5f6e',1,'setCustomChar(UCHAR addr, UCHAR *buffer):&#160;unilcd.cpp'],['../unilcd_8h.html#a5941dec2e511fb8b848adfa954bf5f6e',1,'setCustomChar(UCHAR addr, UCHAR *buffer):&#160;unilcd.cpp']]],
-  ['setdisplaystate_35',['setDisplayState',['../unilcd_8cpp.html#a7bfe0f27dfe60437fc82ad9370426661',1,'setDisplayState(UCHAR onState):&#160;unilcd.cpp'],['../unilcd_8h.html#a7bfe0f27dfe60437fc82ad9370426661',1,'setDisplayState(UCHAR onState):&#160;unilcd.cpp']]]
+  ['initlcd_10',['initLCD',['../unilcd_8cpp.html#af825a18ec569117281a5cdbc2e052fc6',1,'initLCD(VOID):&#160;unilcd.cpp'],['../unilcd_8h.html#af825a18ec569117281a5cdbc2e052fc6',1,'initLCD(VOID):&#160;unilcd.cpp']]],
+  ['initlcdinterface_11',['initLCDInterface',['../unilcd_8cpp.html#a0f36bea067606d2a592b94c22aed7a3c',1,'initLCDInterface(VOID):&#160;unilcd.cpp'],['../unilcd_8h.html#a0f36bea067606d2a592b94c22aed7a3c',1,'initLCDInterface(VOID):&#160;unilcd.cpp']]],
+  ['instruction_5fmode_5fchar_12',['INSTRUCTION_MODE_CHAR',['../unilcd_8h.html#aa2eabe575ca1e6221156518622516bcc',1,'unilcd.h']]],
+  ['instruction_5fmode_5fcmd_13',['INSTRUCTION_MODE_CMD',['../unilcd_8h.html#a1c1c69b7f91858e64005d34c035384b0',1,'unilcd.h']]],
+  ['integration_20with_208_2dbit_20pic_14',['Integration with 8-bit PIC',['../md__home_dilshan_projects_lcd_controller_git_yali_doxygen_static_integrate_pic_xc8.html',1,'']]],
+  ['integration_20with_20arduino_15',['Integration with Arduino',['../md__home_dilshan_projects_lcd_controller_git_yali_doxygen_static_integrate_arduino.html',1,'']]],
+  ['integration_20with_20esp8266_16',['Integration with ESP8266',['../md__home_dilshan_projects_lcd_controller_git_yali_doxygen_static_integrate_esp8266.html',1,'']]],
+  ['integration_20with_20stm32_17',['Integration with STM32',['../md__home_dilshan_projects_lcd_controller_git_yali_doxygen_static_integrate_stm32.html',1,'']]]
 ];

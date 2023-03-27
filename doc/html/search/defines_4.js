@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['returntohome_74',['returnToHome',['../unilcd_8h.html#ae8efa4ddae811bae3b3da9082639dfee',1,'unilcd.h']]]
+  ['instruction_5fmode_5fchar_87',['INSTRUCTION_MODE_CHAR',['../unilcd_8h.html#aa2eabe575ca1e6221156518622516bcc',1,'unilcd.h']]],
+  ['instruction_5fmode_5fcmd_88',['INSTRUCTION_MODE_CMD',['../unilcd_8h.html#a1c1c69b7f91858e64005d34c035384b0',1,'unilcd.h']]]
 ];

@@ -32,21 +32,51 @@
 
 #include "Arduino.h"
 
+/**
+ * Flag to indicate the Arduino AVR project.
+ */
 #define ARDUINO_AVR	    1
 
+/**
+ * Clock output which connected to the CLK terminal of the YALI module.
+ */
 #define SHIFTREG_CLK_PIN    4
+/**
+ * Data output which connected to the DAT terminal of the YALL module.
+ */
 #define SHIFTREG_DATA_PIN   5
+/**
+ * Latch control pin which is connected to the LAT terminal of the YALI module.
+ */
 #define SHIFTREG_LATCH_PIN  6
 
 // Data type and constant mappings.
+/**
+ * Mapping for Unsigned char.
+ */
 #define UCHAR unsigned char
+/**
+ * Mapping for char. 
+ */
 #define CHAR  char
+/**
+ * Mapping for void.
+ */
 #define VOID  void
 
+/**
+ * Maximum string length allowed by the YALI library.
+ */
 #define MAX_STR_LEN 16
 
 // System function mappings.
+/**
+ * Function mapping for long delay.
+ */
 #define DELAY_LONG()  delay(10)
+/**
+ * Function mapping for short delay.
+ */
 #define DELAY_SHORT() delayMicroseconds(50)
 
 #endif /* __UNI_LCD_LIB_ARDUINO_HEADER__ */

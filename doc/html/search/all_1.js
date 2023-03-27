@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gotolcdposition_1',['gotoLCDPosition',['../unilcd_8cpp.html#a6fa90c6eb1c2943e1bdc10cd6d5e219a',1,'gotoLCDPosition(UCHAR x, UCHAR y):&#160;unilcd.cpp'],['../unilcd_8h.html#a6fa90c6eb1c2943e1bdc10cd6d5e219a',1,'gotoLCDPosition(UCHAR x, UCHAR y):&#160;unilcd.cpp']]]
+  ['bill_20of_20materials_2',['Bill of Materials',['../md__home_dilshan_projects_lcd_controller_git_yali_doxygen_static_bom.html',1,'']]]
 ];

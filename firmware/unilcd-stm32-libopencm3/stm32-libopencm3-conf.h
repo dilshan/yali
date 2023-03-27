@@ -35,24 +35,60 @@
 
 #include "stm32_delay.h"
 
+/**
+ * Flag to indicate the STM32 LibOpenCM3 project.
+ */
 #define STM32_LIBOPENCM3    1
 
+/**
+ * Port used to drive the YALI module.
+ */
 #define SHIFTREG_PORT       GPIOA
+/**
+ * Peripheral clock associated with SHIFTREG_PORT.
+ */
 #define SHIFTREG_AHB        RCC_GPIOA
 
+/**
+ * Clock output which connected to the CLK terminal of the YALI module.
+ */
 #define SHIFTREG_CLK_PIN    GPIO0
+/**
+ * Data output which connected to the DAT terminal of the YALL module.
+ */
 #define SHIFTREG_DATA_PIN   GPIO1
+/**
+ * Latch control pin which is connected to the LAT terminal of the YALI module.
+ */
 #define SHIFTREG_LATCH_PIN  GPIO2
 
 // Data type and constant mappings.
+/**
+ * Mapping for Unsigned char.
+ */
 #define UCHAR unsigned char
+/**
+ * Mapping for char. 
+ */
 #define CHAR  char
+/**
+ * Mapping for void.
+ */
 #define VOID  void
 
+/**
+ * Maximum string length allowed by the YALI library.
+ */
 #define MAX_STR_LEN 16
 
 // Delay function mappings.
+/**
+ * Function mapping for long delay.
+ */
 #define DELAY_LONG()  delayMiliSec(10)
+/**
+ * Function mapping for short delay.
+ */
 #define DELAY_SHORT() delayMicroSec(50)
 
 #endif /* __UNI_LCD_LIB_STM32_LIBOCM3_HEADER__ */

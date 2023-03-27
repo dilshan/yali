@@ -30,21 +30,51 @@
 #ifndef __UNI_LCD_LIB_ESP8266_HEADER__
 #define	__UNI_LCD_LIB_ESP8266_HEADER__
 
+/**
+ * Flag to indicate the ESP8266 - FreeRTOS project.
+ */
 #define ESP8266_FREERTOS    1
 
+/**
+ * Clock output which connected to the CLK terminal of the YALI module.
+ */
 #define SHIFTREG_CLK_PIN    12
+/**
+ * Data output which connected to the DAT terminal of the YALL module.
+ */
 #define SHIFTREG_DATA_PIN   13
+/**
+ * Latch control pin which is connected to the LAT terminal of the YALI module.
+ */
 #define SHIFTREG_LATCH_PIN  14
 
 // Data type and constant mappings.
+/**
+ * Mapping for Unsigned char.
+ */
 #define UCHAR unsigned char
+/**
+ * Mapping for char. 
+ */
 #define CHAR  char
+/**
+ * Mapping for void.
+ */
 #define VOID  void
 
+/**
+ * Maximum string length allowed by the YALI library.
+ */
 #define MAX_STR_LEN 16
 
 // System function mappings.
+/**
+ * Function mapping for long delay.
+ */
 #define DELAY_LONG()  usleep(6 * 1000)
+/**
+ * Function mapping for short delay.
+ */
 #define DELAY_SHORT() usleep(64)
 
 #endif /* __UNI_LCD_LIB_ESP8266_HEADER__ */
