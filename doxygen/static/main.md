@@ -1,7 +1,7 @@
 Yet another LCD Interface
 =========================
 
-![YALI Hardware Module](../../resources/lcd-cnt-module-small.jpg)
+![YALI Hardware Module](../resources/lcd-cnt-module-small.jpg)
 
 The goal of the YALI (*Yet Another LCD Interface*) project is to provide a universal interface to drive the popular [Hitachi HD44780](https://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller) LCD controller. This project offers open hardware module and C/C++ library for the HD44780 controller.
 
@@ -16,5 +16,5 @@ The YALI library is developed using C and is designed to be easily integrated wi
  
 The PCB of the YALI module can also order from the PCBWay website.
 
-YALI is an open-source project. All the hardware designs and software source codes are available in the YALI project repository.
+YALI is an open-source project. All the hardware designs and software source codes are available in the [YALI project repository](https://github.com/dilshan/yali). Assembling and interfacing guide for YALI hardware module is also available in [YouTube video](https://youtu.be/gdLx3jKWsBA).
 
