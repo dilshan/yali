@@ -16,4 +16,4 @@ The YALI library is developed using C and is designed to be easily integrated wi
  
 The PCB of the YALI module can also order from the PCBWay website.
 
-YALI is an open-source project. All the hardware designs and software source codes are available in the YALI project repository. The assembling and interfacing guide for the YALI hardware module is available in the following YouTube video: https://youtu.be/gdLx3jKWsBA.
+YALI is an open-source project. All the hardware designs and software source codes are available in the YALI project repository. Assembly and interface guide for YALI hardware module is also available in [YouTube video](https://youtu.be/gdLx3jKWsBA).
