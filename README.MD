@@ -14,6 +14,6 @@ The YALI library is developed using C and is designed to be easily integrated wi
  - [ESP8266 RTOS SDK](https://github.com/espressif/ESP8266_RTOS_SDK)
  - [Mid-range PIC MCUs with MPLAB XC8](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
  
-The PCB of the YALI module can also order from the PCBWay website.
+The PCB of the YALI module can also [order from the PCBWay](https://www.pcbway.com/project/shareproject/Universal_HD44780_LCD_interface_e3f2df0c.html) website.
 
 YALI is an open-source project. All the hardware designs and software source codes are available in the YALI project repository. Assembling and interfacing guide for YALI hardware module is also available in [YouTube video](https://youtu.be/gdLx3jKWsBA).
